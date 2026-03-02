@@ -17,6 +17,16 @@
 </style>
 </head>
 <body>
+<script>
+(function(){
+  var params = new URLSearchParams(window.location.search);
+  var pk = params.get('pk');
+  if(!pk || pk !== 'aTs3qBAEpxlmaluHddD4wQ'){
+    document.body.innerHTML = '<div style="font-family:-apple-system,sans-serif;max-width:500px;margin:80px auto;padding:0 20px;text-align:center;"><h2 style="color:#e6edf3">Purchase required</h2><p style="color:#8b949e">This page is only accessible after completing your purchase.</p><a href="https://buy.stripe.com/6oU14haEX6lDe2z8FI9ws09" style="display:inline-block;background:#238636;color:white;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:600;margin-top:16px">Buy now</a></div>';
+    document.documentElement.style.background='#0d1117';
+  }
+})();
+</script>
 <h1>Claude Code CI/CD Hardening Guide</h1>
 <p>Thanks for purchasing. Your download is ready.</p>
 
